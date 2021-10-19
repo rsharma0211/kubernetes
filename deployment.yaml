@@ -43,7 +43,7 @@ spec:
     spec:
       containers:
         - name: laravel-web-container
-          image: 'gcr.io/stg-sec-live/github.com/4seeanalytics/secureoffice_web'
+          image: ''
           envFrom:
             - secretRef:
                 name: secret-staging

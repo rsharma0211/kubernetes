@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: 2017-12-27T18:38:34Z
+  name: configmap-staging
+  namespace: default
+  resourceVersion: "810136"
+  uid: 252c4572-eb35-11e7-887b-42010a8002b8
+data:
+  APP_KEY: "base64:sbMQPN8RtC5alLIkIrUfCWMTF8CEQIxDZrcHzgZ6LRY="
+  APP_NAME: 'Live Secure'
+  APP_ENV: local
+  APP_DEBUG: true
+  APP_URL: http://localhost
+  APP_ENV_TYPE: 'localhost'
+  FIREBASE_CREDENTIALS: firebase_credentials.json
+  COUNTRIES:  countries.json
+  ANONYMOUS_NAME_LIST: anonymous_names.json
+  TYPE: 'service_account'
+  ADMIN_EMAIL: 'sercuritylive2020annet@gmail.com'
+  EMAIL_SUBJECT_LINE: 'Staging - '
+

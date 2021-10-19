@@ -17,6 +17,4 @@ data:
   COUNTRIES:  countries.json
   ANONYMOUS_NAME_LIST: anonymous_names.json
   TYPE: 'service_account'
-  ADMIN_EMAIL: 'sercuritylive2020annet@gmail.com'
-  EMAIL_SUBJECT_LINE: 'Staging - '
 

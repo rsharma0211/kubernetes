@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    working_dir: /usr/local/apache2/htdocs
+    volumes:
+      - ./src:/usr/local/apache2/htdocs
+      # - vendor_data:/usr/local/apache2/htdocs/vendor
+  
+  apache:
+    build:
+      context: ./
+      dockerfile: apache.dockerfile
+    working_dir: /usr/local/apache2/htdocs
+    volumes_from:
+      - app
+    ports:
+      - 80:80
+      - 443:443
+volumes:
+  vendor_data:
+  vendor_dev_data:
